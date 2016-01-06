@@ -1,0 +1,15 @@
+<h3>Cars Page</h3>
+
+{{test}}
+<div ng-repeat="car in cars">
+Make: {{car.amake}}
+Model: {{car.model}}
+Year: {{car.year}}
+Mileage: {{car.mileage}}
+Price: {{car.price}}
+<a ui-sref="Car({carId:car.$id})">View Car</a>
+</div>
+
+<div> 
+    Add Car <input type="text" name="addCar">
+</div>
